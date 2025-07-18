@@ -25,7 +25,7 @@ jobs:
     - name: Install build dependencies
       run: |
         sudo apt update
-        sudo apt -y install autoconf python unzip zip systemtap-sdt-dev libxtst-dev libasound2-dev libelf-dev libfontconfig1-dev libx11-dev libxext-dev libxrandr-dev libxrender-dev libxtst-dev libxt-dev
+        sudo apt -y install autoconf python3 unzip zip systemtap-sdt-dev libxtst-dev libasound2-dev libelf-dev libfontconfig1-dev libx11-dev libxext-dev libxrandr-dev libxrender-dev libxtst-dev libxt-dev
         git clone --depth 1 --branch buildjre11 https://github.com/Vera-Firefly/android-openjdk-build
     - name: Build with CI build script
       run: |
